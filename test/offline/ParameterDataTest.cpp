@@ -1,16 +1,16 @@
 #include <odbc/internal/Odbc.h>
 #include <odbc/internal/ParameterData.h>
-#include <GoogleTest.h>
 #include <cstddef>
 #include <cstdint>
 #include <cstdlib>
 #include <cstring>
 #include <utility>
+#include "GoogleTest.h"
 //------------------------------------------------------------------------------
 using namespace std;
 //------------------------------------------------------------------------------
 namespace odbc {
-namespace tests {
+namespace test {
 //------------------------------------------------------------------------------
 template<typename CharT, int N>
 static void generateAlphabet(CharT (&buffer)[N], CharT firstLetter = (CharT)'A')
@@ -276,5 +276,5 @@ TEST(ParameterDataTest, testMoveAssignmentHeapHeap)
     EXPECT_TRUE(pd2.ownsHeapBuffer());
 }
 //------------------------------------------------------------------------------
-} // namespace tests
+} // namespace test
 } // namespace odbc

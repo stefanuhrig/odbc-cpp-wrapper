@@ -1,11 +1,11 @@
 #include <odbc/internal/Odbc.h>
 #include <odbc/internal/UtilInternal.h>
-#include <GoogleTest.h>
+#include "GoogleTest.h"
 //------------------------------------------------------------------------------
 using namespace std;
 //------------------------------------------------------------------------------
 namespace odbc {
-namespace tests {
+namespace test {
 //------------------------------------------------------------------------------
 struct NumericTestParams
 {
@@ -77,5 +77,5 @@ INSTANTIATE_TEST_SUITE_P(
     NumericTestParameterized,
     ::testing::ValuesIn(numericTestParams));
 //------------------------------------------------------------------------------
-} // namespace tests
+} // namespace test
 } // namespace odbc

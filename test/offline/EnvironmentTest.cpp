@@ -1,11 +1,11 @@
-#include <vector>
 #include <odbc/Environment.h>
-#include <GoogleTest.h>
+#include <vector>
+#include "GoogleTest.h"
 //------------------------------------------------------------------------------
 using namespace std;
 //------------------------------------------------------------------------------
 namespace odbc {
-namespace tests {
+namespace test {
 //------------------------------------------------------------------------------
 TEST(EnvironmentTest, create)
 {
@@ -44,5 +44,5 @@ TEST(EnvironmentTest, isDriverInstalled)
     EXPECT_FALSE(env->isDriverInstalled("DUMMY DRIVER"));
 }
 //------------------------------------------------------------------------------
-} // namespace tests
+} // namespace test
 } // namespace odbc

@@ -1,14 +1,14 @@
 #include <odbc/Exception.h>
 #include <odbc/Types.h>
 #include <odbc/Util.h>
-#include <GoogleTest.h>
 #include <sstream>
+#include "GoogleTest.h"
 //------------------------------------------------------------------------------
 using namespace std;
 using testing::Types;
 //------------------------------------------------------------------------------
 namespace odbc {
-namespace tests {
+namespace test {
 //------------------------------------------------------------------------------
 TEST(TypesTest, decimal)
 {
@@ -341,5 +341,5 @@ TEST(TypesTest, Nullable)
     EXPECT_STREQ("<NULL>", os.str().c_str());
 }
 //------------------------------------------------------------------------------
-} // namespace tests
+} // namespace test
 } // namespace odbc
